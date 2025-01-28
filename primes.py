@@ -1,5 +1,3 @@
-from ast import Import
-
 
 def get_primes_up_to_250():
     primes = []  # List to store prime numbers

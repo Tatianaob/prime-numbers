@@ -1,6 +1,6 @@
 import unittest
 
-from .primes import get_primes_up_to_250
+from primes import get_primes_up_to_250
 
 class TestGetPrimes(unittest.TestCase):
     # test if all primes up to 250 are in the list
@@ -28,10 +28,10 @@ class TestGetPrimes(unittest.TestCase):
         self.assertNotIn(10, primes)
         self.assertNotIn(240, primes)
 
-    # test a total of 54 prime nums up from 2 -250
+    # test a total of 53 prime nums up from 2 -250
     def test_length_of_list(self):
         primes = get_primes_up_to_250()
-        self.assertEqual(len(primes), 54)
+        self.assertEqual(len(primes), 53)
     
 
 if __name__ == "__main__":
