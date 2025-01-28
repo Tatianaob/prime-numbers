@@ -1,3 +1,6 @@
+from ast import Import
+
+
 def get_primes_up_to_250():
     primes = []  # List to store prime numbers
     for num in range(2, 251):  # Numbers from 2 to 250
@@ -9,3 +12,6 @@ def get_primes_up_to_250():
         if is_prime:  # If no divisors were found, it's prime
             primes.append(num)
     return primes
+
+
+
